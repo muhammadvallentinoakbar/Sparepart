@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar HTML Dasar - Sparepart Motor</title>
+</head>
+<body>
+    <h1>Katalog Sparepart Motor</h1>
+    <h2>Contoh Heading</h2>
+    <h3>Sub Judul: Variasi</h3>
+    <h4>Sub Bagian: Performa</h4>
+    <h5>Judul Kecil: Aksesoris</h5>
+    <h6>Judul Paling Kecil: Detail</h6>
+
+    <hr>
+    <h2>Deskripsi</h2>
+    <p>Website ini berisi daftar <i>sparepart motor</i> lengkap. 
+    Setiap produk dilengkapi <b>nama, kategori, dan harga</b> agar mudah dipahami.</p>
+
+    <p>Paragraf pertama tentang sparepart motor.</p>
+    <br>
+    <p>Paragraf kedua setelah jeda dengan tag &lt;br&gt;.</p>
+
+    <hr>
+    <h2>Sparepart Wajib Servis</h2>
+    <ol>
+        <li>Oli Mesin</li>
+        <li>Busi</li>
+        <li>Kampas Rem</li>
+    </ol>
+    <h2>Aksesoris Tambahan</h2>
+    <ul>
+        <li>Spion Racing</li>
+        <li>Cover Jok</li>
+        <li>Stiker Body</li>
+    </ul>
+
+    <hr>
+    <h2>Link Referensi</h2>
+    <p>Klik link berikut untuk membuka katalog online:</p>
+    <a href="https://www.hondacengkareng.com/kategori-produk/aksesoris-resmi-motor-honda/" target="_blank">Yamaha Parts & Accessories</a>
+
+    <hr>
+    <h2>Gambar Produk</h2>
+    <p>Contoh gambar sparepart motor:</p>
+    <img src="sparepart-yamaha-motor.png" alt="All Item" width="350" height="300">
+    <p>Jika gambar gagal tampil, maka akan muncul teks "All Produk sparepart".</p>
+
+    <hr>
+
+    <h2>Daftar Harga Sparepart</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Kode</th>
+            <th>Nama Sparepart</th>
+            <th>Harga (Rp)</th>
+        </tr>
+        <tr>
+            <td>SP001</td>
+            <td>Oli Mesin Yamalube</td>
+            <td>50.000</td>
+        </tr>
+        <tr>
+            <td>SP002</td>
+            <td>Busi NGK</td>
+            <td>25.000</td>
+        </tr>
+        <tr>
+            <td>SP003</td>
+            <td>Kampas Rem Depan</td>
+            <td>75.000</td>
+        </tr>
+        <tr>
+            <td>SP004</td>
+            <td>Oli Mesin Matik</td>
+            <td>50.000</td>
+        </tr>
+        <tr>
+            <td>SP005</td>
+            <td>Karbulator PWK</td>
+            <td>500.000</td>
+        </tr>
+        <tr>
+            <td>SP006</td>
+            <td>Oli Samping</td>
+            <td>75.000</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Form Pemesanan Sparepart</h2>
+    <form action="prosesdata.php" method="post">
+        <label>Nama Pemesan:</label><br>
+        <input type="text" name="nama" value=""><br><br>
+
+        <label>No. Telepon:</label><br>
+        <input type="text" name="telepon" value=""><br><br>
+
+        <label>Pilih Sparepart:</label><br>
+        <input type="checkbox" name="sparepart" value="oli" checked> Oli Mesin<br>
+        <input type="checkbox" name="sparepart" value="busi"> Busi<br>
+        <input type="checkbox" name="sparepart" value="kampas"> Kampas Rem<br><br>
+
+        <label>Jenis Motor:</label><br>
+        <input type="radio" name="motor" value="Matic" checked> Matic<br>
+        <input type="radio" name="motor" value="Sport"> Sport<br>
+        <input type="radio" name="motor" value="Bebek"> Bebek<br><br>
+
+        <label>Catatan Tambahan:</label><br>
+        <textarea rows="5" cols="30" name="catatan">Tuliskan catatan Anda di sini...</textarea><br><br>
+
+        <label>Kota Pengiriman:</label><br>
+        <select name="kota">
+            <option value="jombang">Jombang</option>
+            <option value="surabaya">Surabaya</option>
+            <option value="malang" selected>Malang</option>
+            <option value="jombang">Pasuruan</option>
+            <option value="surabaya">Gresik</option>
+            <option value="malang" selected>Kediri</option>
+        </select><br><br>
+
+        <input type="submit" value="Pesan Sekarang">
+    </form>
+
+</body>
+</html>
